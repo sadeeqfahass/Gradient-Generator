@@ -29,34 +29,32 @@
   background: rgba(220, 220, 235, 0.7);
 }
 
-#output,
 #button {
   padding: 1rem;
 }
 
-.outputs {
-  display: flex;
-  align-items: center;
-}
-
-#output,
-#output2,
 #result {
   text-align: center;
+  text-transform: lowercase;
   color: #fff;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5px;
+  color: #777;
+  opacity: .3;
+  mix-blend-mode: difference;
+  font-size: 1rem;
 }
 
 @media (max-width: 500px) {
   #button span {
     font-size: 1rem;
     text-wrap: none;
-  }
-
-  #output,
-  #output2,
-  #result {
-    font-size: 1rem;
   }
 
   #result {
